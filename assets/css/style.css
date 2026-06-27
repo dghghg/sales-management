@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: bold;
+}
+
+.table {
+    background-color: white;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: bold;
+}
+
+.btn-group-sm .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.invoice-header {
+    background: linear-gradient(135deg, #0d6efd 0%, #0d5fde 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.invoice-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.invoice-date {
+    font-size: 0.95rem;
+}
+
+.total-amount {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--success-color);
+}
+
+.payment-status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.payment-status.paid {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.payment-status.pending {
+    background-color: var(--warning-color);
+    color: black;
+}
+
+.payment-status.partially_paid {
+    background-color: #ffc107;
+    color: black;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0d5fde;
+    border-color: #0d5fde;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.invoice-summary {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.invoice-summary-item {
+    margin-bottom: 1rem;
+}
+
+.invoice-summary-label {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.invoice-summary-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.export-buttons {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .invoice-header {
+        padding: 1rem;
+    }
+
+    .invoice-number {
+        font-size: 1.2rem;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+}
